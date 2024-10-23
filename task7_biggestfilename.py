@@ -54,6 +54,14 @@ img_names = ['1663231240183817644.jpg',
  '1663424209187179962.jpg',
  '1663424212162573102.jpg']
 
+# # Выполняем HTTP запрос
+#     try:
+#         response = requests.head(url)  # Используем метод HEAD для получения только заголовков
+#     except requests.RequestException as e:
+#         print(f"Ошибка при запросе к {url}: {e}")
+#         continue
+
+
 
 # Создаем сессию
 with requests.Session() as s:
