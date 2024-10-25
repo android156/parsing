@@ -5,7 +5,7 @@ import re
 def get_num_temp(city):
     temp_str = re.search(r'-?\d+(?:\.\d+)?', city['Температура воздуха'])
     if temp_str:
-        return int(temp_str.group())
+        return float(temp_str.group())
     return -100
 
 
