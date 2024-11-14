@@ -95,7 +95,7 @@ html_doc = """
 
 def main():
     # Инициализация объекта BeautifulSoup
-    soup = soup = BeautifulSoup(html_doc, 'lxml')
+    soup = BeautifulSoup(html_doc, 'lxml')
 
     # Находим все теги img
     img_tags = soup.find_all('img')
