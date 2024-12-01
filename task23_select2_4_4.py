@@ -11,6 +11,7 @@ emails = soup.select('div.email_field')
 
 res = [email.select_one('strong').nextSibling.text.strip() for email in emails]
 
+print(res)
 # Варианты
 # emails = soup.select('.email_field strong')
 # emails = [tag.next_sibling.strip() for tag in emails]
